@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculations</title>
+    <link href="../css/term_project.css" rel="stylesheet"/>
+    <script src="../js/MOY.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class = "logo">
+            <a><img src="../images/logo.png" alt="Logo"/></a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="BOYcalculations.html">BOY Calculations</a></li>
+            <li><a href="MOYcalculations.html">MOY Calculations</a></li>
+            <li><a href="EOYcalculations.html">EOY Calculations</a></li>
+            <li><a href="Reviews.html">Reviews</a></li>
+        </ul>
+    </nav>
+    <article class="fullscreen">
+        <h1>Composite score calculator</h1>
+        <h2>Middle of the Year Assessments</h2>
+        <p>Instructions: Please enter the student's scores for each section of the ORF</p>
+    <form id="scoreForm">
+        <fieldset>
+            <div class = "row">
+                <label for="wordsCorrect">Total words correct: </label>
+                <input type="number" min = "0" max = "150" id = "wordsCorrect"/>
+            </div>
+
+            <div class = "row">
+                <label for="accuracy">ORF accuracy: </label>
+                <input type="number" min = "0" max = "100" id = "accuracy"/>
+            </div>
+
+            <div class = "row">
+                <label for="retell">Retell score: </label>
+                <input type="number" min = "0" max = "50" id = "retell"/>
+            </div>
+
+            <div class = "row">
+                <label for="maze">Maze adjusted score: </label>
+                <input type="number" min = "0" max = "40" id = "maze"/>
+            </div>
+
+            <div id = "outputBox">
+                Composite score: <span id="output"></span>
+            </div>
+            <div class = "key">
+                <p> KEY:    <span class = "green"> Green:</span> Above Benchmark - likely to need <b>core</b> support </p>
+                <p> <span class = "yellow"> Yellow:</span> At Benchmark - likely to need <b>core</b> support </p>
+                <p> <span class = "orange"> Orange:</span> Below Benchmark - likely to need <b>strategic</b> support </p>
+                <p> <span class = "red"> Red:</span> Well Below Benchmark - likely to need <b>intensive</b> support </p>
+            </div>
+        </fieldset>
+    </form>
+
+    <table class="score-table">
+  <thead>
+    <tr>
+      <th>Score Type</th>
+      <th>Range</th>
+      <th>Benchmark Level</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>Accuracy</td>
+      <td>0–93</td>
+      <td>Well Below Benchmark</td>
+    </tr>
+    <tr>
+      <td class="empty"></td>
+      <td>94–96</td>
+      <td>Below Benchmark</td>
+    </tr>
+    <tr>
+      <td class="empty"></td>
+      <td>97–98</td>
+      <td>At Benchmark</td>
+    </tr>
+    <tr>
+      <td class="empty"></td>
+      <td>99+</td>
+      <td>Above Benchmark</td>
+    </tr>
+
+
+    <tr>
+      <td>Words Correct</td>
+      <td>0–91</td>
+      <td>Well Below Benchmark</td>
+    </tr>
+    <tr>
+      <td class="empty"></td>
+      <td>92–108</td>
+      <td>Below Benchmark</td>
+    </tr>
+    <tr>
+      <td class="empty"></td>
+      <td>109–140</td>
+      <td>At Benchmark</td>
+    </tr>
+    <tr>
+      <td class="empty"></td>
+      <td>141+</td>
+      <td>Above Benchmark</td>
+    </tr>
+
+
+    <tr>
+      <td>Retell Score</td>
+      <td>0–17</td>
+      <td>Well Below Benchmark</td>
+    </tr>
+    <tr>
+      <td class="empty"></td>
+      <td>18-28</td>
+      <td>Below Benchmark</td>
+    </tr>
+    <tr>
+      <td class="empty"></td>
+      <td>29-47</td>
+      <td>At Benchmark</td>
+    </tr>
+    <tr>
+      <td class="empty"></td>
+      <td>48+</td>
+      <td>Above Benchmark</td>
+    </tr>
+
+    <tr>
+      <td>Maze</td>
+      <td>0–13</td>
+      <td>Well Below Benchmark</td>
+    </tr>
+    <tr>
+      <td class="empty"></td>
+      <td>14-18</td>
+      <td>Below Benchmark</td>
+    </tr>
+    <tr>
+      <td class="empty"></td>
+      <td>19-29</td>
+      <td>At Benchmark</td>
+    </tr>
+    <tr>
+      <td class="empty"></td>
+      <td>30+</td>
+      <td>Above Benchmark</td>
+    </tr>
+
+    <tr>
+      <td>Composite</td>
+      <td>0–284</td>
+      <td>Well Below Benchmark</td>
+    </tr>
+    <tr>
+      <td class="empty"></td>
+      <td>285–357</td>
+      <td>Below Benchmark</td>
+    </tr>
+    <tr>
+      <td class="empty"></td>
+      <td>358–460</td>
+      <td>At Benchmark</td>
+    </tr>
+    <tr>
+      <td class="empty"></td>
+      <td>461+</td>
+      <td>Above Benchmark</td>
+    </tr>
+  </tbody>
+</table>
+
+   </article>
+<footer>
+    <p id = "dateInfo"> </p>
+</footer>
+</body>
+</html>

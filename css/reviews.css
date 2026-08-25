@@ -1,0 +1,38 @@
+
+blockquote {
+
+    background: rgba(74, 144, 226, 0.2);
+    border-left: 10px solid rgba(7, 14, 226, 0.2);
+    quotes: "\201C""\201D""\201C""\2019";
+  	border-radius: 20%;
+	width: 40%;
+	margin: 3%;
+	float: left;
+	padding: 2%;
+    font-size: 1.1em;
+}
+
+blockquote p:last-of-type {
+	border-top: 1px solid rgb(48, 33, 94);
+	text-align: right;
+	font-size: 1.2em;
+}
+
+blockquote p:first-of-type:before {
+  color: rgb(48, 33, 94, 0.50);
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin: 0.2em 0.1em 0em 0.25em;
+  vertical-align: -0.4em;
+  float: left;
+}
+
+.image {
+    float: right;
+    width: 40%;
+    margin: 0% 2% 2% 2%
+}
+.quotes {
+  width: 55%;                     /* remaining width for blockquotes */
+}

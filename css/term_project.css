@@ -1,0 +1,135 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #6c63ff;
+}
+
+/* navigation */
+nav {
+   background: #6c63ff;
+   width: 100%;
+   font-size: 16px;
+}
+
+nav ul {
+   text-align: center;
+}
+
+nav ul li {
+   display: inline-block;
+    width: 18%;
+   padding: 10px 15px;
+   background: #4A90E2;
+   -moz-border-radius-topleft: 7px;
+   -moz-border-radius-topright: 7px;
+   -webkit-border-top-left-radius: 7px;
+   -webkit-border-top-right-radius: 7px;
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+}
+
+
+div {
+    font-size: 20px;
+    background: rgba(7, 14, 226, 0.2);
+    border-radius: 20%;
+    width: 100%;
+    margin: 1%;
+    float: left;
+    padding: 2%;
+}
+
+article {
+	width: 75%;
+	float: left;
+	font-size: 0.8em;
+	text-align: justify;
+}
+
+.fullscreen {
+    width: 100%;
+	float: left;
+	font-size: 0.8em;
+	text-align: justify;
+}
+
+article + img {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+}
+
+
+article + img + img {
+    margin-top: 100px;
+    display: block;
+    width: 20%;
+    margin-left: auto;
+}
+
+
+
+footer {
+	text-align: center;
+	font-size: 0.6em;
+	margin-top: 4%;
+	border-top: 3px solid #6c63ff;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	clear: both;
+	padding-bottom: 20px;
+}
+
+.logo {
+    background-color: white;
+    border-radius: 0%;
+    align-items: center;
+    margin: 0%;
+}
+
+.score-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+.score-table th,
+.score-table td {
+  border: 1px solid #333;
+  padding: 15px;
+  vertical-align: middle;
+  text-align: center;
+  border-bottom: none;
+}
+
+.score-table th {
+  background-color: #f0f0f0;
+}
+
+
+.score-table td.empty {
+  border-top: none;
+  border-bottom: none;
+}
+
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.orange {
+    background-color: orange;
+}
+.green {
+    background-color: #00ff4b;
+}
